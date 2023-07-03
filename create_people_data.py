@@ -15,7 +15,7 @@ def read_people(people_list_file, is_a_test):
 def read_placements(filename, people):
     file = open(filename, 'r')
     avecs = find_avecs(file, people)
-    groups = find_groups(file)
+    groups = find_groups(file, people)
     return avecs, groups
     
 def find_avecs(file, people):
@@ -34,11 +34,11 @@ def find_avecs(file, people):
         row = readline_and_strip(file)
     return avecs
 
-def find_groups(file):
+def find_groups(file, people):
     groups = []
     row = readline_and_strip(file)
     while row:
-        if "#" not in row:
+        if "#" not in row and row in people:
             groups.append(read_group(file, row))
         row = readline_and_strip(file)
     return groups

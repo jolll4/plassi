@@ -4,6 +4,8 @@ person 3; person 5
 person 4; person 8
 person 10; person 7
 person 29; person 14
+person 24; person 0
+person 25; person 23
 #Groups
 #group1
 person 1
@@ -13,14 +15,26 @@ person 13
 person 14
 person 4
 person 11
-person 2
 #group2
 person 3
 person 5
 person 6
 person 8
 person 7
+person 9
 #group3
 person 9
 person 10
 person 54
+#group4
+person 9
+person 28
+person 21
+#group5
+person 27
+person 26
+person 15
+#group6
+person 26
+person 23
+person 25
