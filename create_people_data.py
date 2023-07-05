@@ -9,7 +9,7 @@ def create_people_data(people_list_file, placement_list_file):
 def read_people(people_list_file, is_a_test):
     people = []
     if is_a_test:
-        people = create_person_list(n=30)
+        people = create_person_list(n=31)
     return people
 
 def read_placements(filename, people):

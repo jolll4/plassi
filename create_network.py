@@ -14,7 +14,7 @@ def create_edgeless_network(people):
 
 def add_avecs(avecs):
     for i, j in avecs:
-        G.add_edge(i,j,weight=8)
+        G.add_edge(i,j,weight=10)
 
 def add_groups(groups):
     for group in groups:
